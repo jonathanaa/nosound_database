@@ -4787,6 +4787,3 @@ int main(){
     }
     return 0;
 }
-//unsigned long nStart = clock();
-//unsigned long nEnd = clock();
-//cout<<"ˆÌÐÐ•rég:"<<(nEnd-nStart)<<endl<<"¿‚¹²¹P”µ:"<<fcounter<<endl;
