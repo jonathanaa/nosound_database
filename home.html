@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script>
+</head>
+
+<body>
+<div class="container">
+<div style="text-align:center;"><h1>MY DATABASE</h1></div>
+<center><input type ="button" class="btn btn-primary btn-lg btn-block" onclick="javascript:location.href='http://localhost/nosound_database/interface/add.html'" value="新增"></input></center>
+<br>
+<br>
+<center><input type ="button" class="btn btn-success btn-lg btn-block" onclick="javascript:location.href='http://localhost/nosound_database/interface/search.html'" value="搜尋"></input></center>
+<br>
+<br>
+<center><input type ="button" class="btn btn-danger btn-lg btn-block" onclick="javascript:location.href='http://localhost/nosound_database/interface/delete.html'" value="刪除"></input></center>
+<br>
+<br>
+</div>
+</body>
+
+</html>
+<!--
+尚未解決
+新增
+1.新增欄位如果有空白，會用_取代
+2.不會檢查url有沒有重複、長度
+搜尋
+1.如果url沒有搜尋到，不會顯示 no record
+2.viewcount、res、duration沒有範圍搜尋，只有相等搜尋
+-->

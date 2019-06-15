@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<div class="container">
+<form action="delete.php" method="post">
+<div style="text-align:center;"><h1>What do you want to delete:</h1></div>
+<br> 
+<select class="form-control" name="delete" id="delete" onchange="ShowStr(this.id)">
+<option value="url">URL</option>
+<option value="title">TITLE</option>
+<option value="content">CONTENT</option>
+<option value="viewcount">VIEWCOUNT</option>
+<option value="res">RES</option>
+<option value="duration">DURATION</option>
+</select>
+<br>
+<h3>Input:</h3>
+<br>
+<input class="form-control" type="text" name="input" id="input">
+<br>
+<input type="submit" class="btn btn-success btn-lg btn-block">
+</form>
+<br>
+<input type ="button" class="btn btn-warning btn-lg btn-block" onclick="javascript:location.href='http://localhost/nosound_database/interface/home.html'" value="返回首頁"></input>
+</div>
+</body>
+<script type="text/javascript">
+function ShowStr(x){
+　var Str=document.getElementById(x).value;
+  if(Str=="url"){
+	document.getElementById('input').type = 'text';
+  }
+　else if(Str=="title"){
+	document.getElementById('input').type = 'text';
+  }
+  else if(Str=="content"){
+	document.getElementById('input').type = 'text';
+  }
+  else if(Str=="viewcount"){
+	document.getElementById('input').type = 'number';
+  }
+  else if(Str=="res"){
+	document.getElementById('input').type = 'number';
+  }
+  else if(Str=="duration"){
+	document.getElementById('input').type = 'number';
+  }
+}
+</script>
+</html> 
